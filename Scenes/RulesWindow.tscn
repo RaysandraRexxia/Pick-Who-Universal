@@ -48,7 +48,6 @@ theme_override_constants/separation = 18
 [node name="TurnHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1282520306]
 layout_mode = 2
 theme_override_constants/separation = 16
-alignment = 1
 
 [node name="GameTurnLabel" type="Label" parent="MarginContainer/VBoxContainer/TurnHBox" unique_id=147865770]
 layout_mode = 2
@@ -69,7 +68,6 @@ theme_override_constants/separation = 18
 [node name="GuessHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=2111116559]
 layout_mode = 2
 theme_override_constants/separation = 16
-alignment = 1
 
 [node name="GuessLabel" type="Label" parent="MarginContainer/VBoxContainer/GuessHBox" unique_id=1446883741]
 layout_mode = 2
@@ -89,7 +87,6 @@ theme_override_constants/separation = 18
 [node name="FormatHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=91740971]
 layout_mode = 2
 theme_override_constants/separation = 16
-alignment = 1
 
 [node name="FormatLabel" type="Label" parent="MarginContainer/VBoxContainer/FormatHBox" unique_id=1843655813]
 layout_mode = 2
