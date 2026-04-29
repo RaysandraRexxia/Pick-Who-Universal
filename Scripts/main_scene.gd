@@ -8,6 +8,7 @@ class_name MainScene
 @onready var chosen_card_window: ChosenCardWindow = $DarkenRect/ChosenCardWindow
 @onready var rules_window: RulesWindow = $DarkenRect/RulesWindow
 @onready var options_window: OptionsWindow = $DarkenRect/OptionsWindow
+@onready var controls_window: ControlsWindow = $DarkenRect/ControlsWindow
 @onready var fade_box: ColorRect = $FadeBox
 @onready var see_tile_button: Button = $BottomHBoxRight/SeeTileButton
 @onready var rules_button: Button = $BottomHBoxRight/RulesButton

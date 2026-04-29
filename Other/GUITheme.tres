@@ -138,3 +138,5 @@ FileDialog/icons/toggle_hidden = SubResource("DPITexture_tfakw")
 FileDialog/styles/embedded_border = ExtResource("1_a4xlg")
 FileDialog/styles/embedded_unfocused_border = ExtResource("1_a4xlg")
 FileDialog/styles/panel = ExtResource("1_a4xlg")
+HSeparator/constants/separation = 16
+VSeparator/constants/separation = 16

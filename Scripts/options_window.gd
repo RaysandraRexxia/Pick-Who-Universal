@@ -3,11 +3,13 @@ class_name OptionsWindow
 
 
 @onready var close_button: Button = $MarginContainer/HBoxContainer/VBoxContainer/CloseButton
+@onready var controls_button: Button = $MarginContainer/HBoxContainer/VBoxContainer/ControlsButton
 @onready var file_path_button: Button = $MarginContainer/HBoxContainer/VBoxContainer/FilePathButton
 @onready var image_file_dialog: FileDialog = $MarginContainer/HBoxContainer/VBoxContainer/ImageFileDialog
 @onready var chosen_folder_label: Label = $MarginContainer/HBoxContainer/VBoxContainer/ChosenFolderLabel
 @onready var fullscreen_button: CheckButton = $MarginContainer/HBoxContainer/VBoxContainer/FullscreenButton
 @export var main_scene: MainScene
+@export var controls_window: ControlsWindow
 var folder_target: String = "/Images"
 var fullscreen_toggled: bool = false
 
@@ -44,11 +46,6 @@ func _on_fullscreen_button_pressed() -> void:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 
 
-
-
-
-
-
-
-
-#
+func _on_controls_button_pressed() -> void:
+	controls_window.close_button.grab_focus()
+	controls_window.show()

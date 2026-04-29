@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://celapw50re3wa" path="res://Scenes/ChosenCardWindow.tscn" id="2_tr2i4"]
 [ext_resource type="PackedScene" uid="uid://buqs8pme5r8tj" path="res://Scenes/RulesWindow.tscn" id="3_nhkr4"]
 [ext_resource type="PackedScene" uid="uid://c214dilv7bwrp" path="res://Scenes/OptionsWindow.tscn" id="4_7rqgy"]
+[ext_resource type="PackedScene" uid="uid://bxmd5x7im4lfc" path="res://Scenes/ControlsWindow.tscn" id="6_y4jh7"]
 
 [node name="MainScene" type="Control" unique_id=552479338]
 layout_mode = 3
@@ -185,7 +186,7 @@ offset_right = 500.0
 offset_bottom = 256.0
 main_scene = NodePath("../..")
 
-[node name="OptionsWindow" parent="DarkenRect" unique_id=551271540 node_paths=PackedStringArray("main_scene") instance=ExtResource("4_7rqgy")]
+[node name="OptionsWindow" parent="DarkenRect" unique_id=551271540 node_paths=PackedStringArray("main_scene", "controls_window") instance=ExtResource("4_7rqgy")]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -198,6 +199,21 @@ offset_top = -256.0
 offset_right = 256.0
 offset_bottom = 256.0
 main_scene = NodePath("../..")
+controls_window = NodePath("../ControlsWindow")
+
+[node name="ControlsWindow" parent="DarkenRect" unique_id=652243629 node_paths=PackedStringArray("options_window") instance=ExtResource("6_y4jh7")]
+visible = false
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 659.0
+offset_top = 227.5
+offset_right = -659.0
+offset_bottom = -227.5
+grow_horizontal = 1
+grow_vertical = 1
+options_window = NodePath("../OptionsWindow")
 
 [node name="CreditLabel" type="Label" parent="DarkenRect" unique_id=1310996191]
 layout_mode = 1
@@ -208,7 +224,7 @@ offset_left = -66.0
 offset_right = 66.0
 offset_bottom = 23.0
 grow_horizontal = 2
-text = "Made by RayCast (Raysandra Morton)"
+text = "Made by RayCast (Raysandra Morton), Control icons by Kenney"
 
 [node name="FadeBox" type="ColorRect" parent="." unique_id=258304406]
 visible = false

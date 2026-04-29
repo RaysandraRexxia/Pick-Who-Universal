@@ -1,0 +1,266 @@
+[gd_scene format=3 uid="uid://bxmd5x7im4lfc"]
+
+[ext_resource type="Theme" uid="uid://b7bk5gswffhn7" path="res://Other/GUITheme.tres" id="1_lymfl"]
+[ext_resource type="Script" uid="uid://bwtwxnap187x7" path="res://Scripts/controls_window.gd" id="1_u0fhk"]
+[ext_resource type="Texture2D" uid="uid://c3y2dklkxc65w" path="res://Other/ControlIcons/keyboard_arrows.png" id="2_ydxu1"]
+[ext_resource type="Texture2D" uid="uid://r03qkqxw45gr" path="res://Other/ControlIcons/mouse_move.png" id="3_5j0lc"]
+[ext_resource type="Texture2D" uid="uid://cgexlqd8k3vyh" path="res://Other/ControlIcons/steamdeck_stick_l.png" id="3_n6m7r"]
+[ext_resource type="Texture2D" uid="uid://6nohp3h1es7x" path="res://Other/ControlIcons/steamdeck_dpad.png" id="4_5j0lc"]
+[ext_resource type="Texture2D" uid="uid://c4el0aafmlpu" path="res://Other/ControlIcons/keyboard_escape.png" id="6_23w0m"]
+[ext_resource type="Texture2D" uid="uid://c7ldbbk23su7g" path="res://Other/ControlIcons/keyboard_enter.png" id="6_jkxhu"]
+[ext_resource type="Texture2D" uid="uid://c5ohp5sg5imd0" path="res://Other/ControlIcons/mouse_left.png" id="7_64c8o"]
+[ext_resource type="Texture2D" uid="uid://cg763odjsuuiw" path="res://Other/ControlIcons/keyboard_space.png" id="7_ow0gf"]
+[ext_resource type="Texture2D" uid="uid://cxdyu337uc6ej" path="res://Other/ControlIcons/keyboard_tab.png" id="8_u0fhk"]
+[ext_resource type="Texture2D" uid="uid://dmt8f1hkh6qj3" path="res://Other/ControlIcons/steamdeck_button_a.png" id="8_ytr2q"]
+[ext_resource type="Texture2D" uid="uid://chiq16lyk175s" path="res://Other/ControlIcons/steamdeck_button_b.png" id="11_8lf88"]
+[ext_resource type="Texture2D" uid="uid://me0vsnxe7ixo" path="res://Other/ControlIcons/playstation_button_color_cross.png" id="12_qin56"]
+[ext_resource type="Texture2D" uid="uid://dd5r78w8j3j5e" path="res://Other/ControlIcons/playstation_button_color_circle.png" id="14_ipg0v"]
+[ext_resource type="Texture2D" uid="uid://7ta0q4ciwc24" path="res://Other/ControlIcons/steamdeck_button_x.png" id="15_ygirw"]
+[ext_resource type="Texture2D" uid="uid://bgui2agmyq8n7" path="res://Other/ControlIcons/playstation_button_color_square.png" id="16_vrkrb"]
+[ext_resource type="Texture2D" uid="uid://bcxhesld7cxqo" path="res://Other/ControlIcons/steamdeck_button_y.png" id="17_17668"]
+[ext_resource type="Texture2D" uid="uid://tfmncxfi05uq" path="res://Other/ControlIcons/playstation_button_color_triangle.png" id="18_5exs0"]
+[ext_resource type="Texture2D" uid="uid://f0od8clp36re" path="res://Other/ControlIcons/steamdeck_button_options.png" id="19_l1pmv"]
+[ext_resource type="Texture2D" uid="uid://ds416t6b352e1" path="res://Other/ControlIcons/playstation4_button_options.png" id="20_llugr"]
+
+[node name="ControlsWindow" type="MarginContainer" unique_id=652243629]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 960.0
+offset_top = 540.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u0fhk")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1611132379]
+layout_mode = 2
+color = Color(0.16078432, 0.15686275, 0.18039216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=82934547]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1464121201]
+layout_mode = 2
+
+[node name="ControlsLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1609272595]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+theme_override_font_sizes/font_size = 64
+text = "Controls:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=1715402116]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1259832479]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="VBoxActions" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=38912145]
+layout_mode = 2
+theme_override_constants/separation = 22
+alignment = 1
+
+[node name="NavigationLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxActions" unique_id=826285533]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+text = "Navigation"
+horizontal_alignment = 1
+
+[node name="ClickLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxActions" unique_id=230243279]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+text = "Click / Pick"
+horizontal_alignment = 1
+
+[node name="Cancel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxActions" unique_id=722662235]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+text = "Cancel / Close"
+horizontal_alignment = 1
+
+[node name="SCC" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxActions" unique_id=44328457]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+text = "See Chosen Card"
+horizontal_alignment = 1
+
+[node name="Rules" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxActions" unique_id=1818683544]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+text = "See Rules"
+horizontal_alignment = 1
+
+[node name="Options" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxActions" unique_id=1418817269]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+text = "Open Options"
+horizontal_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=808212679]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+
+[node name="VBoxPC" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=35994471]
+layout_mode = 2
+
+[node name="HBoxNavigation" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC" unique_id=1401034651]
+layout_mode = 2
+alignment = 1
+
+[node name="KeyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxNavigation" unique_id=683308090]
+layout_mode = 2
+texture = ExtResource("2_ydxu1")
+
+[node name="MouseTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxNavigation" unique_id=925521340]
+layout_mode = 2
+texture = ExtResource("3_5j0lc")
+
+[node name="HBoxClick" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC" unique_id=179059839]
+layout_mode = 2
+alignment = 1
+
+[node name="KeyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxClick" unique_id=1449441094]
+layout_mode = 2
+texture = ExtResource("6_jkxhu")
+
+[node name="MouseTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxClick" unique_id=1967763242]
+layout_mode = 2
+texture = ExtResource("7_64c8o")
+
+[node name="HBoxCancel" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC" unique_id=2006132033]
+layout_mode = 2
+alignment = 1
+
+[node name="KeyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxCancel" unique_id=16157742]
+layout_mode = 2
+texture = ExtResource("6_23w0m")
+
+[node name="HBoxSCC" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC" unique_id=268859655]
+layout_mode = 2
+alignment = 1
+
+[node name="KeyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxSCC" unique_id=1470592862]
+layout_mode = 2
+texture = ExtResource("7_ow0gf")
+
+[node name="HBoxRules" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC" unique_id=182105237]
+layout_mode = 2
+alignment = 1
+
+[node name="KeyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxRules" unique_id=703094098]
+layout_mode = 2
+texture = ExtResource("8_u0fhk")
+
+[node name="HBoxOptions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC" unique_id=1150700260]
+layout_mode = 2
+alignment = 1
+
+[node name="KeyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxPC/HBoxOptions" unique_id=145048621]
+layout_mode = 2
+texture = ExtResource("6_23w0m")
+
+[node name="VSeparator2" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=25079319]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+
+[node name="VBoxController" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1571016969]
+layout_mode = 2
+
+[node name="HBoxNavigation" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController" unique_id=1550299761]
+layout_mode = 2
+alignment = 1
+
+[node name="StickTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxNavigation" unique_id=361614773]
+layout_mode = 2
+texture = ExtResource("3_n6m7r")
+
+[node name="DPadTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxNavigation" unique_id=1565936968]
+layout_mode = 2
+texture = ExtResource("4_5j0lc")
+
+[node name="HBoxClick" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController" unique_id=9315511]
+layout_mode = 2
+alignment = 1
+
+[node name="XInputTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxClick" unique_id=14401168]
+layout_mode = 2
+texture = ExtResource("8_ytr2q")
+
+[node name="PSTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxClick" unique_id=386991350]
+layout_mode = 2
+texture = ExtResource("12_qin56")
+
+[node name="HBoxCancel" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController" unique_id=1401386049]
+layout_mode = 2
+alignment = 1
+
+[node name="XInputTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxCancel" unique_id=841197444]
+layout_mode = 2
+texture = ExtResource("11_8lf88")
+
+[node name="PSTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxCancel" unique_id=2012826999]
+layout_mode = 2
+texture = ExtResource("14_ipg0v")
+
+[node name="HBoxSCC" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController" unique_id=936978747]
+layout_mode = 2
+alignment = 1
+
+[node name="XInputTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxSCC" unique_id=1748314112]
+layout_mode = 2
+texture = ExtResource("15_ygirw")
+
+[node name="PSTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxSCC" unique_id=1438805232]
+layout_mode = 2
+texture = ExtResource("16_vrkrb")
+
+[node name="HBoxRules" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController" unique_id=754584037]
+layout_mode = 2
+alignment = 1
+
+[node name="XInputTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxRules" unique_id=672770320]
+layout_mode = 2
+texture = ExtResource("17_17668")
+
+[node name="PSTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxRules" unique_id=1639089719]
+layout_mode = 2
+texture = ExtResource("18_5exs0")
+
+[node name="HBoxOptions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController" unique_id=1917017802]
+layout_mode = 2
+alignment = 1
+
+[node name="XInputTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxOptions" unique_id=752273653]
+layout_mode = 2
+texture = ExtResource("19_l1pmv")
+
+[node name="PSTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxController/HBoxOptions" unique_id=1357062855]
+layout_mode = 2
+texture = ExtResource("20_llugr")
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=787963404]
+layout_mode = 2
+theme = ExtResource("1_lymfl")
+
+[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1803412979]
+layout_mode = 2
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+theme = ExtResource("1_lymfl")
+text = "Close"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
