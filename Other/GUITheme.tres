@@ -1,0 +1,140 @@
+[gd_resource type="Theme" format=3 uid="uid://b7bk5gswffhn7"]
+
+[ext_resource type="StyleBox" uid="uid://d4g2npg2e3y1l" path="res://Other/GUIStyleBoxFlat.tres" id="1_a4xlg"]
+
+[sub_resource type="SystemFont" id="SystemFont_a4xlg"]
+generate_mipmaps = true
+
+[sub_resource type="DPITexture" id="DPITexture_mr4uy"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#b2b2b2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\".45\" stroke-width=\"2\" d=\"m9 11-3-3 3-3\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_uv51i"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m8 1a1 1 0 0 0 -1 1v5h-2c-1.108 0-2 .892-2 2v1h10v-1c0-1.108-.892-2-2-2h-2v-5a1 1 0 0 0 -1-1zm-5 10v4l10-1v-3z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_0iw3x"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#b2b2b2\" d=\"M2 3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8v-1H8v-4h2V8h4v2h1V7a1 1 0 0 0-1-1h-4a1 1 0 0 1-1-1V4a1 1 0 0 0-1-1Z\"/><path fill=\"#fefffe\" d=\"M13 13h2v-2h-2V9h-2v2H9v2h2v2h2z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_un0kq"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M8 1.7 5.626 5.797 1 6.895l3.236 3.408-.359 4.673 4.14-1.977 4.157 1.942-.396-4.653L15 6.895l-4.626-1.098z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_d71va"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M10 2H6m2 4v8M4 9l4 5 4-5\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_peb8g"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 14h4m-2-4V2m4 5L8 2 4 7\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_5rs6r"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#b2b2b2\" d=\"M2 1v14h12V6H9V1zm8 0v4h4z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_ee1if"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\"><path fill=\"#fff\" fill-opacity=\".6\" d=\"M14 5a4 4 0 0 0-4 4v46a4 4 0 0 0 4 4h36a4 4 0 0 0 4-4V22a1 1 0 0 0-.29-.707l-16-16a1 1 0 0 0-.707-.29V5H14zm0 2h22v12a4 4 0 0 0 4 4h12v32a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_tlty3"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#b2b2b2\" d=\"M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4a1 1 0 0 1-1-1V3a1 1 0 0 0-1-1z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_8dkx8"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\"><path fill=\"#e0e0e0\" d=\"M12 10a4 4 0 0 0-4 4v36a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V22a4 4 0 0 0-4-4H36l-2-4c-1-2-2-4-4-4z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_fdo1j"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#b2b2b2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\".45\" stroke-width=\"2\" d=\"m6 11 3-3-3-3\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_im32l"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_061u8"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M3 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9c1.105 0 1.818-.91 2-2l1-6a1 1 0 0 0-1-1H6c-.552 0-.909.455-1 1l-1 6c-.091.545-.448 1-1 1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1 1 1 0 0 0 1 1h5a1 1 0 0 0-1-1H7a2 2 0 0 0-2-2H3z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_u23yo"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#b2b2b2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 11V4m4 4L8 4 4 8\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_b1i1y"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#b2b2b2\" d=\"M5 8a4 4 0 1 1 4 4v2a6 6 0 1 0-6-6H1l3 4 3-4z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_bwd6b"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M3 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4l-3-3h-1v6H3zm1 0v5h3V1zm4 8a1 1 0 0 1 0 4 1 1 0 0 1 0-4z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_4iqhg"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M9 1v2h6V1zM4 1a1 1 0 0 0-.691.291l-2 2a1 1 0 0 0 1.414 1.414l.293-.293v7.172l-.293-.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l2-2a1 1 0 0 0-1.414-1.414l-.293.293V4.412l.293.293a1 1 0 0 0 1.414-1.414l-2-2A1 1 0 0 0 4 1zm5 6v2h4V7zm0 6v2h2v-2z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_bxusr"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v5h5v-5zm7 0v5h5v-5zm-7 7v5h5v-5zm7 0v5h5v-5z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_8kh30"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><g fill=\"#e0e0e0\"><path d=\"m13.297.714h-13.013a.454.454 0 0 0 -.318.779l4.615 4.507v7.086a.45.45 0 0 0 .738.354l3.511-2.812a.454.454 0 0 0 .17-.354v-4.274l4.614-4.506a.454.454 0 0 0 -.317-.779z\"/><path d=\"m11.085832 14.18196c3.399443 1.97457 6.855925-2.441094 4.074102-5.1815164-2.781825-2.7404217-7.2642008.6646174-5.2597994 4.0134654l-1.9001346 1.871854 1.1856973 1.168051zm1.699723-4.4945981c2.236109 0 2.236109 3.3042441 0 3.3042441-2.236108 0-2.236108-3.3042441 0-3.3042441z\"/></g></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_tfakw"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#b2b2b2\" d=\"M8 2C5.443 2 2.209 3.948 1.045 7.705a1 1 0 0 0 0 .55C2.163 12.211 5.5 14 8 14s5.836-1.789 6.961-5.725a1 1 0 0 0 0-.55C13.861 3.935 10.554 2 8 2zm0 2a4 4 0 0 1 0 8 4 4 0 0 1 0-8zm0 2a2 2 0 0 0 0 4 2 2 0 0 0 0-4z\"/></svg>
+"
+
+[sub_resource type="SystemFont" id="SystemFont_f06oa"]
+generate_mipmaps = true
+
+[resource]
+default_font = SubResource("SystemFont_f06oa")
+default_font_size = 32
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 8
+Button/font_sizes/font_size = 32
+FileDialog/colors/file_disabled_color = Color(1, 1, 1, 0.25)
+FileDialog/colors/file_icon_color = Color(1, 1, 1, 1)
+FileDialog/colors/folder_icon_color = Color(1, 1, 1, 1)
+FileDialog/constants/thumbnail_size = 64
+FileDialog/constants/title_outline_size = 8
+FileDialog/fonts/title_font = SubResource("SystemFont_a4xlg")
+FileDialog/icons/back_folder = SubResource("DPITexture_mr4uy")
+FileDialog/icons/clear = SubResource("DPITexture_uv51i")
+FileDialog/icons/create_folder = SubResource("DPITexture_0iw3x")
+FileDialog/icons/favorite = SubResource("DPITexture_un0kq")
+FileDialog/icons/favorite_down = SubResource("DPITexture_d71va")
+FileDialog/icons/favorite_up = SubResource("DPITexture_peb8g")
+FileDialog/icons/file = SubResource("DPITexture_5rs6r")
+FileDialog/icons/file_thumbnail = SubResource("DPITexture_ee1if")
+FileDialog/icons/folder = SubResource("DPITexture_tlty3")
+FileDialog/icons/folder_thumbnail = SubResource("DPITexture_8dkx8")
+FileDialog/icons/forward_folder = SubResource("DPITexture_fdo1j")
+FileDialog/icons/list_mode = SubResource("DPITexture_im32l")
+FileDialog/icons/load = SubResource("DPITexture_061u8")
+FileDialog/icons/parent_folder = SubResource("DPITexture_u23yo")
+FileDialog/icons/reload = SubResource("DPITexture_b1i1y")
+FileDialog/icons/save = SubResource("DPITexture_bwd6b")
+FileDialog/icons/sort = SubResource("DPITexture_4iqhg")
+FileDialog/icons/thumbnail_mode = SubResource("DPITexture_bxusr")
+FileDialog/icons/toggle_filename_filter = SubResource("DPITexture_8kh30")
+FileDialog/icons/toggle_hidden = SubResource("DPITexture_tfakw")
+FileDialog/styles/embedded_border = ExtResource("1_a4xlg")
+FileDialog/styles/embedded_unfocused_border = ExtResource("1_a4xlg")
+FileDialog/styles/panel = ExtResource("1_a4xlg")

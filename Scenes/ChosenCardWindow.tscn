@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://celapw50re3wa"]
+
+[ext_resource type="Script" uid="uid://c2qtj4wlpjbmy" path="res://Scripts/chosen_card_window.gd" id="1_oiljv"]
+[ext_resource type="Theme" uid="uid://b7bk5gswffhn7" path="res://Other/GUITheme.tres" id="2_oiljv"]
+
+[node name="ChosenCardWindow" type="MarginContainer" unique_id=1094907774]
+z_index = 20
+z_as_relative = false
+custom_minimum_size = Vector2(510, 157)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 705.0
+offset_top = 461.5
+offset_right = -705.0
+offset_bottom = -461.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_oiljv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=299158315]
+layout_mode = 2
+color = Color(0.16078432, 0.15686275, 0.18039216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=79444268]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=575770947]
+layout_mode = 2
+alignment = 1
+
+[node name="CardLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=62540378]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 48
+text = "Your Tile is:"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1231958753]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_left = 134
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 134
+theme_override_constants/margin_bottom = 0
+
+[node name="TileTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=758048198]
+custom_minimum_size = Vector2(242, 0)
+layout_mode = 2
+expand_mode = 5
+
+[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1040347763]
+layout_mode = 2
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+theme = ExtResource("2_oiljv")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 42
+text = "Close"
+flat = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

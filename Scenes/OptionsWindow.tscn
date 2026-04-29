@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://c214dilv7bwrp"]
+
+[ext_resource type="Script" uid="uid://7be0qjec46oc" path="res://Scripts/options_window.gd" id="1_8j6oo"]
+[ext_resource type="Theme" uid="uid://b7bk5gswffhn7" path="res://Other/GUITheme.tres" id="2_vw441"]
+
+[node name="OptionsWindow" type="MarginContainer" unique_id=551271540]
+custom_minimum_size = Vector2(512, 512)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 794.0
+offset_top = 489.0
+offset_right = -794.0
+offset_bottom = -489.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+script = ExtResource("1_8j6oo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1340196224]
+layout_mode = 2
+color = Color(0.16078432, 0.15686275, 0.18039216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1740735183]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1001406676]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=967207900]
+layout_mode = 2
+alignment = 1
+
+[node name="FilePathLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1512157066]
+layout_mode = 2
+theme = ExtResource("2_vw441")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Choose Image Folder:"
+horizontal_alignment = 1
+
+[node name="FilePathButton" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=960131643]
+layout_mode = 2
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../FullscreenButton")
+focus_next = NodePath("../FullscreenButton")
+focus_previous = NodePath("../FullscreenButton")
+theme = ExtResource("2_vw441")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Choose Folder"
+
+[node name="ImageFileDialog" type="FileDialog" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1895425373]
+oversampling_override = 1.0
+title = "Open a Directory"
+initial_position = 3
+size = Vector2i(846, 360)
+current_screen = 0
+theme = ExtResource("2_vw441")
+file_mode = 2
+display_mode = 1
+access = 2
+show_hidden_files = true
+folder_creation_enabled = false
+favorites_enabled = false
+deleting_enabled = false
+
+[node name="ChosenFolderLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=264476085]
+visible = false
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1989589024]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="FullscreenButton" type="CheckButton" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=5098646]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../FilePathButton")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../CloseButton")
+focus_next = NodePath("../CloseButton")
+focus_previous = NodePath("../FilePathButton")
+text = "Fullscreen:"
+flat = true
+alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=934184982]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="CloseButton" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=414558864]
+layout_mode = 2
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../FullscreenButton")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath("../FullscreenButton")
+focus_previous = NodePath("../FullscreenButton")
+theme = ExtResource("2_vw441")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " Close "
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/FilePathButton" to="." method="_on_file_path_button_pressed"]
+[connection signal="dir_selected" from="MarginContainer/HBoxContainer/VBoxContainer/ImageFileDialog" to="." method="_on_image_file_dialog_dir_selected"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/FullscreenButton" to="." method="_on_fullscreen_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

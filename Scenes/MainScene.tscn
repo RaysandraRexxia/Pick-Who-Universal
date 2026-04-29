@@ -1,0 +1,228 @@
+[gd_scene format=3 uid="uid://d3ulq7xap5l3i"]
+
+[ext_resource type="Script" uid="uid://donsp6knvfwpk" path="res://Scripts/main_scene.gd" id="1_hpc76"]
+[ext_resource type="Theme" uid="uid://b7bk5gswffhn7" path="res://Other/GUITheme.tres" id="1_qxria"]
+[ext_resource type="PackedScene" uid="uid://celapw50re3wa" path="res://Scenes/ChosenCardWindow.tscn" id="2_tr2i4"]
+[ext_resource type="PackedScene" uid="uid://buqs8pme5r8tj" path="res://Scenes/RulesWindow.tscn" id="3_nhkr4"]
+[ext_resource type="PackedScene" uid="uid://c214dilv7bwrp" path="res://Scenes/OptionsWindow.tscn" id="4_7rqgy"]
+
+[node name="MainScene" type="Control" unique_id=552479338]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_qxria")
+script = ExtResource("1_hpc76")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1732453123]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.27, 0.25596002, 0.23490001, 1)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=605991751]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.44300002
+anchor_right = 0.5
+anchor_bottom = 0.44300002
+offset_left = -902.96
+offset_top = -446.91202
+offset_right = 893.12
+offset_bottom = 446.35196
+grow_horizontal = 2
+grow_vertical = 2
+follow_focus = true
+vertical_scroll_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer" unique_id=99071895]
+layout_mode = 2
+columns = 12
+
+[node name="BottomLeftMargin" type="MarginContainer" parent="." unique_id=876252040]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.89000005
+anchor_right = 0.48800004
+anchor_bottom = 1.0
+offset_top = -0.20007324
+offset_right = 0.039916992
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="BottomLeftMargin" unique_id=1293194892]
+layout_mode = 2
+color = Color(0.101960786, 0.101960786, 0.101960786, 0.6)
+
+[node name="BottomHBoxLeft" type="HBoxContainer" parent="BottomLeftMargin" unique_id=263107132]
+layout_mode = 2
+alignment = 1
+
+[node name="RemainingLabel" type="Label" parent="BottomLeftMargin/BottomHBoxLeft" unique_id=1797281716]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Remaining"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slash" type="Label" parent="BottomLeftMargin/BottomHBoxLeft" unique_id=1821488690]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " / "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TotalLabel" type="Label" parent="BottomLeftMargin/BottomHBoxLeft" unique_id=66387334]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TilesText" type="Label" parent="BottomLeftMargin/BottomHBoxLeft" unique_id=1970343784]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " tiles face-up"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BottomHBoxRight" type="HBoxContainer" parent="." unique_id=891532547]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48800004
+anchor_top = 0.89000005
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.039916992
+offset_top = 0.27996826
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="SeeTileButton" type="Button" parent="BottomHBoxRight" unique_id=1418948888]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " See Chosen Tile "
+
+[node name="RulesButton" type="Button" parent="BottomHBoxRight" unique_id=1698536893]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " Rules "
+
+[node name="OptionsButton" type="Button" parent="BottomHBoxRight" unique_id=1001060558]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " Options "
+
+[node name="ResetButton" type="Button" parent="BottomHBoxRight" unique_id=83067087]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " Reset "
+
+[node name="ExitButton" type="Button" parent="BottomHBoxRight" unique_id=1533594193]
+layout_mode = 2
+theme = ExtResource("1_qxria")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = " Quit "
+
+[node name="DarkenRect" type="ColorRect" parent="." unique_id=1698402293]
+visible = false
+z_index = 19
+z_as_relative = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.058450002, 0.054599997, 0.07, 0.87058824)
+
+[node name="ChosenCardWindow" parent="DarkenRect" unique_id=295173683 node_paths=PackedStringArray("main_scene") instance=ExtResource("2_tr2i4")]
+visible = false
+layout_mode = 1
+offset_left = 695.0
+offset_top = 460.0
+offset_right = -697.0
+offset_bottom = -457.0
+main_scene = NodePath("../..")
+
+[node name="RulesWindow" parent="DarkenRect" unique_id=1551678267 node_paths=PackedStringArray("main_scene") instance=ExtResource("3_nhkr4")]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -256.0
+offset_right = 500.0
+offset_bottom = 256.0
+main_scene = NodePath("../..")
+
+[node name="OptionsWindow" parent="DarkenRect" unique_id=551271540 node_paths=PackedStringArray("main_scene") instance=ExtResource("4_7rqgy")]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
+main_scene = NodePath("../..")
+
+[node name="CreditLabel" type="Label" parent="DarkenRect" unique_id=1310996191]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -66.0
+offset_right = 66.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Made by RayCast (Raysandra Morton)"
+
+[node name="FadeBox" type="ColorRect" parent="." unique_id=258304406]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="BottomHBoxRight/SeeTileButton" to="." method="_on_see_tile_button_pressed"]
+[connection signal="pressed" from="BottomHBoxRight/RulesButton" to="." method="_on_rules_button_pressed"]
+[connection signal="pressed" from="BottomHBoxRight/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="BottomHBoxRight/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="BottomHBoxRight/ExitButton" to="." method="_on_exit_button_pressed"]

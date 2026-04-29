@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://buqs8pme5r8tj"]
+
+[ext_resource type="Script" uid="uid://bmx1a5k46gffe" path="res://Scripts/rules_window.gd" id="1_fu6dr"]
+[ext_resource type="Theme" uid="uid://b7bk5gswffhn7" path="res://Other/GUITheme.tres" id="2_emdmo"]
+
+[node name="RulesWindow" type="MarginContainer" unique_id=429145800]
+z_index = 20
+z_as_relative = false
+custom_minimum_size = Vector2(1000, 512)
+anchors_preset = -1
+anchor_left = 0.24000001
+anchor_top = 0.263
+anchor_right = 0.76000005
+anchor_bottom = 0.73700005
+offset_left = -0.8000183
+offset_top = -0.040008545
+offset_right = 0.79992676
+offset_bottom = 0.039978027
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fu6dr")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1890499700]
+layout_mode = 2
+color = Color(0.16078432, 0.15686275, 0.18039216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1661015401]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1825720924]
+layout_mode = 2
+
+[node name="RulesTitleLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=441973289]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Rules:"
+horizontal_alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=1801397992]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="TurnHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1282520306]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="GameTurnLabel" type="Label" parent="MarginContainer/VBoxContainer/TurnHBox" unique_id=147865770]
+layout_mode = 2
+text = "Game Turn:"
+
+[node name="GameTurnText" type="Label" parent="MarginContainer/VBoxContainer/TurnHBox" unique_id=1571974276]
+layout_mode = 2
+text = "1) Choose an opponent.
+2) Ask that player a yes or no question about their character.
+3) They answer \"Yes\" or \"No\".
+4) Flip your tiles facedown if you think those characters are NOT their character.
+5) The next player clock-wise takes a turn."
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=1215277628]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="GuessHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=2111116559]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="GuessLabel" type="Label" parent="MarginContainer/VBoxContainer/GuessHBox" unique_id=1446883741]
+layout_mode = 2
+text = "Guessing:   "
+
+[node name="GuessText" type="Label" parent="MarginContainer/VBoxContainer/GuessHBox" unique_id=528786251]
+layout_mode = 2
+text = "Instead of taking a normal turn, you may choose an opponent and make a guess on
+which character they have. There are a couple possible outcomes:
+-> Correct Guess: That player is eliminated from the game. If you are the last player, you win!
+-> Wrong Guess: You are eliminated from the game!"
+
+[node name="HSeparator3" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=1581253772]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="FormatHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=91740971]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="FormatLabel" type="Label" parent="MarginContainer/VBoxContainer/FormatHBox" unique_id=1843655813]
+layout_mode = 2
+text = "Image
+Formating:"
+horizontal_alignment = 1
+
+[node name="FormatText" type="Label" parent="MarginContainer/VBoxContainer/FormatHBox" unique_id=463096332]
+layout_mode = 2
+text = "1) Your images need to be in a standard file format ( .png, .jpg, etc.).
+2) The file names will be the character name in the app.
+3) Make them around 512 pixels in the largest dimension for best quality."
+
+[node name="HSeparator4" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=593485836]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="PathHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=217917017]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="PathText" type="Label" parent="MarginContainer/VBoxContainer/PathHBox" unique_id=2146558942]
+custom_minimum_size = Vector2(812, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.5858334, 0.29000002, 1)
+text = "Pick your image folder in the options!"
+autowrap_mode = 3
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/PathHBox" unique_id=172481688]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer/PathHBox" unique_id=269349807]
+layout_mode = 2
+size_flags_vertical = 3
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+theme = ExtResource("2_emdmo")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Close"
+flat = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PathHBox/CloseButton" to="." method="_on_close_button_pressed"]

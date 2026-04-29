@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://bb44ie7pxut7c"]
+
+[ext_resource type="Texture2D" uid="uid://dsk2ncsiylwij" path="res://Other/Back.png" id="1_t0yj4"]
+[ext_resource type="Script" uid="uid://b6k7olxcdsapu" path="res://Scripts/tile.gd" id="2_iof5j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iof5j"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o0nvw"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.21960784, 0.21960784, 0.21960784, 0.76862746)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r4md0"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.22, 0.22, 0.22, 0.76862746)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[node name="Tile" type="Control" unique_id=784076952]
+clip_contents = true
+custom_minimum_size = Vector2(140, 200)
+layout_mode = 3
+anchor_right = 0.07300001
+anchor_bottom = 0.185
+offset_right = -0.16001892
+offset_bottom = 0.19999695
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("2_iof5j")
+
+[node name="TileTexture" type="TextureRect" parent="." unique_id=1298062914]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_t0yj4")
+expand_mode = 2
+
+[node name="TileButton" type="Button" parent="." unique_id=1719434889]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_iof5j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o0nvw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_r4md0")
+button_mask = 3
+
+[node name="NameLabel" type="Label" parent="." unique_id=160529760]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.975
+anchor_right = 1.0
+anchor_bottom = 0.975
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Name"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="NameLabel" unique_id=816787185]
+z_index = 1
+z_as_relative = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.43529412)
+
+[connection signal="pressed" from="TileButton" to="." method="_on_tile_button_pressed"]
