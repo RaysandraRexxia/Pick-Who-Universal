@@ -1,3 +1,4 @@
+
 # Pick Who Universal
 Based on the popular guessing game, each player chooses an image folder to use and starts playing!
 
@@ -12,3 +13,6 @@ Based on the popular guessing game, each player chooses an image folder to use a
 
 ## Example with full board and some cards flipped down:
 <img width="1920" height="1080" alt="Screenshot_20260428_215233" src="https://github.com/user-attachments/assets/9cafce5c-56bc-4268-a595-836b642db20a" />
+
+## Example image folder (select this folder ingame):
+<img width="1085" height="915" alt="Screenshot_20260428_220641" src="https://github.com/user-attachments/assets/ca4a47fb-9a58-4753-89b0-d4b7c99b8a88" />
